@@ -8,4 +8,5 @@ Simple Solidity smart contract to store, retrive and update a string.
 `npm test`
 
 ## deploy contract
-`npm deploy.js`
+1. create an `.env` file and set your MNEMONIC prhase
+2. `npm deploy.js`
