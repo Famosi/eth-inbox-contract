@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity ^0.4.17;
+pragma solidity ^0.8.9;
 
 // Memory = Copy
 // CallData = Read-Only ==> const
@@ -15,16 +15,15 @@ Functions can be:
 - payable: there is exchange of "money"
 */
 
-// Class
-contract Inbox 
-{
+// Class 
+contract Inbox {
     string public message;
-  
-    constructor(string initialMessage) public{
+    
+    constructor(string memory initialMessage) {
         message = initialMessage;
     }
     
-    function setMessage(string newMessage) public {
+    function setMessage(string memory newMessage) public {
         message = newMessage;
     }
-} 
+}
