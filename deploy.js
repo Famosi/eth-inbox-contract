@@ -6,7 +6,7 @@ const { abi, evm } = require('./compile');
 
 const provider = new HDWalletProvider(
     process.env.MNEMONIC,
-    'https://rinkeby.infura.io/v3/d779a1b3c7754f1a8620ccb75cc2d755'
+    process.env.INFURA_URL,
 )
 
 // web3 isntance
